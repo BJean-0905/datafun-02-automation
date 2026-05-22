@@ -115,6 +115,7 @@ uvx pre-commit run --all-files
 
 # run the module
 uv run python -m datafun.app_case
+uv run python -m datafun.app_bjean
 
 # do chores
 uv run ruff format .
