@@ -37,6 +37,7 @@ You'll work with just these areas:
 
 - **docs/** - the project narrative and documentation
 - **src/datafun** - where the magic happens
+- **Artifacts** - where data output occurs post successful script run
 - **pyproject.toml** - update authorship & links
 - **zensical.toml** - update authorship & links
 
@@ -187,6 +188,8 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 | P02 | Wrote file: case_02.txt
 | P02 | Waiting 1 second(s)...
 | P02 | Wrote file: case_03.txt
+| P02 | Waiting 1 second(s)...
+| P02 | Wrote file: case_04.txt
 | P02 | Waiting 1 second(s)...
 | P02 | ========================
 | P02 | Executed successfully!
