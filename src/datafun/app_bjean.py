@@ -1,6 +1,6 @@
-"""src/datafun/app_case.py - Project script (example).
+"""src/datafun/app_bjean.py - Project script (example).
 
-Author: Denise Case
+Author: Denise Case, Britany Kline
 Date: 2026-04
 
   Practice key Python skills related to:
@@ -44,7 +44,7 @@ LOG: logging.Logger = get_logger("P02", level="INFO")
 
 ROOT_DIR: Final[Path] = Path.cwd()
 DATA_DIR: Final[Path] = ROOT_DIR / "data"
-PROCESSED_DIR: Final[Path] = DATA_DIR / "processed"
+ARTIFACTS_DIR: Final[Path] = ROOT_DIR / "Artifacts"
 
 FIRST_QUARTER: Final[int] = 1
 LAST_QUARTER: Final[int] = 4
@@ -94,7 +94,7 @@ def create_files_from_numeric_range() -> None:
 
     for quarter_number in range(FIRST_QUARTER, LAST_QUARTER + 1):
         filename: str = f"case_quarter_{quarter_number}.txt"
-        path: Path = PROCESSED_DIR / filename
+        path: Path = ARTIFACTS_DIR / filename
         content: str = f"Report for quarter number: {quarter_number}\n"
         write_text_file(path=path, content=content)
 
@@ -119,7 +119,7 @@ def create_files_from_list() -> None:
 
     for pet_name in PET_LIST:
         filename: str = f"case_{pet_name}.txt"
-        path: Path = PROCESSED_DIR / filename
+        path: Path = ARTIFACTS_DIR / filename
         content: str = f"Pet data for: '{pet_name}'\n"
         write_text_file(path=path, content=content)
 
@@ -149,7 +149,7 @@ def create_files_using_list_comprehension() -> None:
 
     for favorite in favorite_list:
         filename: str = f"case_{favorite}.txt"
-        path: Path = PROCESSED_DIR / filename
+        path: Path = ARTIFACTS_DIR / filename
         content: str = f"Special data about: '{favorite}'\n"
         write_text_file(path=path, content=content)
 
@@ -177,7 +177,7 @@ def create_files_periodically() -> None:
 
     while i <= FILE_COUNT:
         filename: str = f"case_{i:02d}.txt"
-        path: Path = PROCESSED_DIR / filename
+        path: Path = ARTIFACTS_DIR / filename
         content: str = f"Periodic file number: {i}\n"
         write_text_file(path=path, content=content)
         LOG.info(f"Waiting {WAIT_SECONDS} second(s)...")
