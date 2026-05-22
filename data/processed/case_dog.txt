@@ -1,1 +1,3 @@
 Pet data for: 'dog'
+Age
+Name

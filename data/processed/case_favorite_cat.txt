@@ -1,1 +1,3 @@
 Special data about: 'favorite_cat'
+Color
+Species

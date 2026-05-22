@@ -1,1 +1,3 @@
 Special data about: 'favorite_fish'
+Color
+Species

@@ -52,7 +52,7 @@ LAST_QUARTER: Final[int] = 4
 PET_LIST: Final[list[str]] = ["dog", "cat", "fish"]
 
 WAIT_SECONDS: Final[int] = 1
-FILE_COUNT: Final[int] = 3
+FILE_COUNT: Final[int] = 4
 
 
 # === DECLARE A HELPER FUNCTION TO WRITE A FILE ===
